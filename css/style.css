@@ -2732,3 +2732,7 @@ button,
     padding-right: max(5%, calc((100vw - 1320px) / 2));
   }
 }
+
+#popupMessage{
+  color: white;
+}
