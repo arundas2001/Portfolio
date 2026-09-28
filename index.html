@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Arun Das | Aspiring Machine Learning Engineer, BCA (Hons) Student, Python, SQL and Machine Learning.">
+    <meta name="author" content="Arun Das">
+    <title>Arun Das | Machine Learning Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/Portfolio/assets/logo/logo.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="page-preloader" id="pagePreloader">
+        <div class="loader">
+            <p>loading</p>
+            <div class="words">
+                <span class="word">buttons</span>
+                <span class="word">forms</span>
+                <span class="word">switches</span>
+                <span class="word">cards</span>
+                <span class="word">buttons</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-container">
+        <div class="navbar">
+            <!-- Brand -->
+            <a href="#home" class="navbar-brand">
+                <div class="logo-icon">
+                    <img src="/assets/logo/logo.png" alt="Arun's DEV Studio Logo" class="logo-image">
+                </div>
+                <span class="brand-text">Arun's DEV Studio</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="bi bi-house nav-icon"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="bi bi-person nav-icon"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">
+                        <i class="bi bi-mortarboard nav-icon"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="bi bi-folder2-open nav-icon"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="bi bi-envelope nav-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+
+                <!-- DAY / NIGHT TOGGLE -->
+                <li class="nav-item theme-item">
+                    <div class="toggleWrapper">
+                        <input class="input" id="dn" type="checkbox" aria-label="Toggle day and night mode">
+                        <label class="toggle" for="dn" aria-label="Toggle day and night mode">
+                            <span class="toggle__handler">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1"></span>
+                            <span class="star star--2"></span>
+                            <span class="star star--3"></span>
+                            <span class="star star--4"></span>
+                            <span class="star star--5"></span>
+                            <span class="star star--6"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-header">
+            <a href="#home" class="mobile-menu-brand">
+                <div class="logo-icon">
+                    <img src="/assets/logo/logo.png" alt="Arun's DEV Studio Logo" class="logo-image">
+                </div>
+                <span>Arun's DEV Studio</span>
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close menu">×</button>
+        </div>
+
+        <ul class="mobile-menu-nav">
+            <li>
+                <a href="#home" class="mobile-menu-link active">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="mobile-menu-link">
+                    <i class="bi bi-person"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#education" class="mobile-menu-link">
+                    <i class="bi bi-mortarboard"></i>
+                    <span>Education</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="mobile-menu-link">
+                    <i class="bi bi-folder2-open"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="mobile-menu-link">
+                    <i class="bi bi-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HOME -->
+    <section id="home" class="content-section home-section">
+        <div class="home-content">
+            <h1>
+                Arun Das
+                <span>Aspiring Machine Learning Engineer</span>
+            </h1>
+            <p class="home-intro">
+                BCA (Hons) student specializing in Machine Learning,
+                with a practical foundation in Python, SQL, C, HTML and CSS.
+            </p>
+            <p class="home-role">
+                BCA (Hons) Student
+                <span>•</span>
+                Python
+                <span>•</span>
+                SQL
+                <span>•</span>
+                Machine Learning
+            </p>
+            <div class="home-actions">
+                <a href="#projects" class="glass-btn">
+                    <i class="bi bi-folder2-open"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="glass-btn">
+                    <i class="bi bi-chat-dots"></i>
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile image -->
+        <img src="/assets/my photo/my.png" class="home-photo" alt="Arun Das">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">ABOUT ME</span>
+            <h2 class="section-title">Analytical thinking meets technology</h2>
+            <p class="section-subtitle">
+                I am a BCA (Hons) student specializing in Machine Learning,
+                with a working foundation in Python, SQL, C, HTML and CSS.
+                I also have practical experience using Git and GitHub
+                for version control.
+            </p>
+            <p class="section-subtitle">
+                I bring 12 months of hands-on industrial experience from
+                the Quality Department at ITC Limited, ITC Malur Food Division,
+                where I supported quality checks, packing and process operations
+                on a high-volume production line.
+            </p>
+            <p class="section-subtitle">
+                I am currently applying this analytical and process-driven
+                mindset to machine learning, data projects, Python development,
+                software development and IT.
+            </p>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <strong>12</strong>
+                    <span>Months Industrial Experience</span>
+                </div>
+                <div class="stat-card">
+                    <strong>6+</strong>
+                    <span>Programming & Web Technologies</span>
+                </div>
+                <div class="stat-card">
+                    <strong>3</strong>
+                    <span>Languages</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Pursuing</strong>
+                    <span>BCA(H)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">TECHNICAL SKILLS</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">My current technical foundation and development tools.</p>
+
+            <h3 class="subsection-title">Programming & Web</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>Programming & Machine Learning</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-mysql-plain colored skill-icon"></i>
+                    <h3>SQL</h3>
+                    <p>Database & Data Queries</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-c-plain colored skill-icon"></i>
+                    <h3>C</h3>
+                    <p>Programming Fundamentals</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored skill-icon"></i>
+                    <h3>HTML</h3>
+                    <p>Web Structure</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored skill-icon"></i>
+                    <h3>CSS</h3>
+                    <p>Styling & Responsive Design</p>
+                </div>
+                <div class="skill-card learning">
+                    <i class="devicon-javascript-plain colored skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>Learning</p>
+                </div>
+                <div class="skill-card learning">
+                    <i class="devicon-php-plain colored skill-icon"></i>
+                    <h3>PHP</h3>
+                    <p>Learning</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-robot skill-icon"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Fundamentals</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Software & Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="devicon-git-plain colored skill-icon"></i>
+                    <h3>Git</h3>
+                    <p>Version Control</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-github-original skill-icon"></i>
+                    <h3>GitHub</h3>
+                    <p>Code Hosting</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-vscode-plain colored skill-icon"></i>
+                    <h3>VS Code</h3>
+                    <p>Development</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-pycharm-plain colored skill-icon"></i>
+                    <h3>PyCharm</h3>
+                    <p>Python Development</p>
+                </div>
+                <div class="skill-card">
+                    <i class="devicon-mysql-plain colored skill-icon"></i>
+                    <h3>MySQL</h3>
+                    <p>Database</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-database skill-icon"></i>
+                    <h3>PostgreSQL</h3>
+                    <p>Database</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-earmark-spreadsheet skill-icon"></i>
+                    <h3>Microsoft Excel</h3>
+                    <p>Data & Spreadsheet</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-earmark-slides skill-icon"></i>
+                    <h3>PowerPoint</h3>
+                    <p>Presentations</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-database-fill skill-icon"></i>
+                    <h3>phpMyAdmin</h3>
+                    <p>Database Management</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Concepts & Core Competencies</h3>
+            <div class="concepts-grid">
+                <div class="concept-card">
+                    <i class="bi bi-cpu"></i>
+                    <span>Machine Learning Fundamentals</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-code-square"></i>
+                    <span>Software Development</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-rulers"></i>
+                    <span>Engineering Drawing</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-eyedropper"></i>
+                    <span>Laboratory Instrumentation</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-lightbulb"></i>
+                    <span>Analytical Thinking</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-people"></i>
+                    <span>Teamwork</span>
+                </div>
+                <div class="concept-card">
+                    <i class="bi bi-kanban"></i>
+                    <span>Project Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">MY JOURNEY</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic background, technical skills, and professional experience.</p>
+
+            <div class="education-grid">
+                <article class="education-card current">
+                    <div class="education-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="education-content">
+                        <span class="education-status">Current</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p>BCA (H) at EIILM Kolkata</p>
+                        <p class="education-specialization">Computer Applications</p>
+                        <span class="education-date">2024 - Present</span>
+                    </div>
+                </article>
+
+                <article class="education-card">
+                    <div class="education-icon">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Computer Science</h3>
+                        <p>
+                            Developing a strong foundation in software development,
+                            programming, databases, and modern web technologies.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- SKILLS INSIDE EDUCATION -->
+            <div class="education-subsection">
+                <div class="education-subsection-heading">
+                    <span class="education-mini-label">TECHNICAL SKILLS</span>
+                    <h3>Skills</h3>
+                    <p>Technologies and tools I use while learning and building projects.</p>
+                </div>
+
+                <div class="skill-pills">
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">PHP</span>
+                    <span class="skill-pill">Mysql</span>
+                    <span class="skill-pill">python</span>
+                    <span class="skill-pill">C</span>
+                    <span class="skill-pill">VSCODE</span>
+                    <span class="skill-pill">PostgreSQL</span>
+                    <span class="skill-pill">Pycharm</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">GitHub</span>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE INSIDE EDUCATION -->
+            <div class="education-subsection experience-inside-education">
+                <div class="education-subsection-heading">
+                    <span class="education-mini-label">PROFESSIONAL EXPERIENCE</span>
+                    <h3>Experience</h3>
+                    <p>Practical quality and operations experience.</p>
+                </div>
+
+                <article class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Quality & Packing Operations</h3>
+                            <h4>Quality Inspection Experience</h4>
+                        </div>
+                        <div class="experience-date">Practical Experience</div>
+                    </div>
+
+                    <ul class="experience-list">
+                        <li>Inspected <strong>12–18 samples per day</strong> during routine quality activities.</li>
+                        <li>Checked <strong>5–8 batches per shift</strong> while supporting packing operations.</li>
+                        <li>Completed <strong>48–60 quality checks per week</strong>.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">EXPERIENCE</span>
+            <h2 class="section-title">Industrial Experience</h2>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Quality Department / Quality Chemist</h3>
+                        <h4>ITC Limited - ITC Malur Food Division</h4>
+                    </div>
+                    <div class="experience-date">
+                        Sep 2022 – Sep 2023
+                        <span>Bengaluru</span>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li><strong>Inspected 12–18 food samples daily</strong> using moisture and colour analysers.</li>
+                    <li><strong>Monitored 5–8 batches per shift</strong> using digital weighing scales.</li>
+                    <li><strong>Conducted 45–60 quality control checks weekly</strong> using titration tools.</li>
+                    <li><strong>Maintained 100% compliance</strong> with department SOPs over 12 months.</li>
+                    <li>Collaborated with cross-functional teams to streamline daily production workflows.</li>
+                    <li>Ensured consistent quality standards for Bingo snacks masalas, noodles, noodle seasoning, pasta,
+                        pasta masalas and vermicelli.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">PROJECTS</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Selected projects demonstrating my programming and problem-solving practice.</p>
+
+            <!-- <div class="project-grid">
+                Smart Calculator 
+                <article class="project-card">
+                    <div class="project-image calculator-preview">
+                        <div class="calculator-mini">
+                            <div class="calculator-display">128 × 4</div>
+                            <div class="calculator-buttons">
+                                <span>AC</span>
+                                <span>DEL</span>
+                                <span>%</span>
+                                <span>÷</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>×</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>−</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>Advanced Smart Calculator</h3>
+                        <p>
+                            A responsive calculator built with HTML, CSS
+                            and JavaScript featuring arithmetic operations,
+                            scientific functions, calculation history,
+                            score tracking and smart result reactions.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="bi bi-check-circle"></i> Scientific Mode</span>
+                            <span><i class="bi bi-check-circle"></i> Calculation History</span>
+                            <span><i class="bi bi-check-circle"></i> Responsive UI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="bi bi-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section id="certifications" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">CERTIFICATION</span>
+            <h2 class="section-title">Certifications</h2>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <div>
+                    <h3>Advanced Computer Course</h3>
+                    <p>Mousumi Institute of Technology, Chakdaha</p>
+                    <span>2018</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section id="languages" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">LANGUAGES</span>
+            <h2 class="section-title">Languages</h2>
+
+            <div class="language-grid">
+                <div class="language-card">
+                    <div class="language-icon"><i class="bi bi-translate"></i></div>
+                    <div>
+                        <h3>Bengali</h3>
+                        <p>Native</p>
+                    </div>
+                </div>
+                <div class="language-card">
+                    <div class="language-icon"><i class="bi bi-translate"></i></div>
+                    <div>
+                        <h3>Hindi</h3>
+                        <p>Fluent</p>
+                    </div>
+                </div>
+                <div class="language-card">
+                    <div class="language-icon"><i class="bi bi-translate"></i></div>
+                    <div>
+                        <h3>English</h3>
+                        <p>Working Proficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-section">
+        <div class="section-inner">
+            <span class="section-label">CONTACT</span>
+            <h2 class="section-title">Let's Build Something</h2>
+            <p class="section-subtitle">
+                Interested in discussing a project, internship,
+                entry-level opportunity or collaboration?
+                Send me a message.
+            </p>
+
+            <div class="contact-layout">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="What would you like to discuss?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-input" rows="6"
+                                placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="bi bi-send"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo-icon">
+                <img src="/assets/logo/logo.png" alt="Arun's DEV Studio Logo" class="logo-image">
+            </div>
+            <span>Arun's DEV Studio</span>
+        </div>
+        <div class="footer-center">© 2026 Arun Das. All rights reserved.</div>
+        <div class="footer-right">
+            <a href="https://www.linkedin.com/in/arundas741201" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn" class="footer-social">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/arundas2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                class="footer-social">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- CONTACT SUCCESS POPUP -->
+    <div class="popup-backdrop" id="popupBackdrop"></div>
+    <div class="contact-popup" id="contactPopup">
+        <div class="contact-popup-icon">
+            <i class="bi bi-check-lg"></i>
+        </div>
+        <h3>Message Sent!</h3>
+        <p id="popupMessage">Thanks! I will reply soon.</p>
+        <button type="button" class="contact-popup-close" id="popupClose">Close</button>
+    </div>
+
+</body>
+
+</html>
